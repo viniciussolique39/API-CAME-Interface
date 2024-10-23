@@ -5,19 +5,7 @@ import api from '../../services/api'
 
 function Home() {
 
-  const users = [{
-    id: '12345657jsj',
-    name: 'Vinicius',
-    age: 18,
-    email: 'Vinicius.solique@ganso.com.br'
-  }, {
-
-    id: '123456578vsj',
-    name: 'Ingrid',
-    age: 28,
-    email: 'ingrid.solique@gmail.com'
-  }
-  ]
+  const users = []
 
   return (
 
