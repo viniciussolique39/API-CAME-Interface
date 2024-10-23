@@ -9,12 +9,11 @@ function Home() {
   let users = []
 
  async function getUsers(){
-
   users = await api.get('/usuarios')
   }
 
   useEffect(() => {
-
+      getUsers()
   }, [])
 
   return (
