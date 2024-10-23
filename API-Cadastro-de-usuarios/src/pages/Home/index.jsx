@@ -11,8 +11,11 @@ function Home() {
  async function getUsers(){
 
   users = await api.get('/usuarios')
-
   }
+
+  useEffect(() => {
+
+  }, [])
 
   return (
 
