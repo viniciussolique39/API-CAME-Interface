@@ -1,4 +1,90 @@
-.container{
+/* Estilos para o container principal do formulário */
+.container {
     display: flex;
+    flex-direction: column;
     align-items: center;
-}
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #f7f7f7;
+  }
+  
+  /* Estilos para o título do formulário */
+  h1 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Estilos para o próprio formulário */
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilos para os campos de input */
+  input {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  
+  input:focus {
+    border-color: #007BFF;
+  }
+  
+  /* Estilos para o botão de envio */
+  button {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Efeito de hover para o botão */
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
+
+  & span {
+    font-weight: normal;
+  }
+
+   & button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+   }
+   &buton:hover{
+    opacity: 0.5;
+   }
+  }
