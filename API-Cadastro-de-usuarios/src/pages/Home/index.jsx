@@ -9,6 +9,7 @@ function Home() {
 
  async function getUsers(){
 
+  await api.get('/usuarios')
 
   }
 
