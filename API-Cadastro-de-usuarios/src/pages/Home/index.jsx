@@ -24,20 +24,20 @@ function Home() {
 
       <form>
         <h1>Cadastro de Estudantes</h1>
-        <input name='Nome' type='text' />
-        <input name='Idade' type='number' />
-        <input name='E-mail' type='email' />
+        <input placeholder='Informe um Nome' name='Nome' type='text' />
+        <input placeholder='Informe uma idade' name='Idade' type='number' />
+        <input placeholder='Informe um e-mail' name='E-mail' type='email' />
         <button type='buttton'>Cadastrar Estudantes</button>
       </form>
 
       {
         users.map(user => (
 
-          <div key={user.id}>
+          <div key={user.id} className="card">
             <div>
-              <p>Nome: {user.name} </p>
-              <p>Idade: {user.age}</p>
-              <p>Email: {user.email} </p>
+              <p>Nome: <span>{user.name}</span> </p>
+              <p>Idade: <span>{user.age}</span></p>
+              <p>Email: <span>{user.email} </span></p>
             </div>
             <button>
               <img src={Trash} />
