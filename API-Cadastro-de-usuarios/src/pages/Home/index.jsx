@@ -7,6 +7,11 @@ function Home() {
 
   const users = []
 
+  function getUsers(){
+
+    
+  }
+
   return (
 
     <div className='container'>
