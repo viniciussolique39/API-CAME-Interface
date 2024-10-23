@@ -7,9 +7,9 @@ function Home() {
 
   const users = []
 
-  function getUsers(){
+ async function getUsers(){
 
-    
+
   }
 
   return (
