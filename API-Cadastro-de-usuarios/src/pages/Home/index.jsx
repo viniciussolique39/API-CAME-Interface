@@ -1,4 +1,4 @@
-import './App.css'
+import './style.css'
 
 function Home() {
 
@@ -11,4 +11,4 @@ function Home() {
   )
 }
 
-export default App
+export default Home
