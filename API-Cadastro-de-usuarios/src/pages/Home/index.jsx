@@ -5,11 +5,11 @@ import api from '../../services/api'
 
 function Home() {
 
-  const users = []
+  let users = []
 
  async function getUsers(){
 
-  await api.get('/usuarios')
+  users = await api.get('/usuarios')
 
   }
 
