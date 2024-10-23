@@ -23,6 +23,12 @@ const inputEmail =  useRef()
 
   async function createUsers(){
 
+    if(!inputName.current.value || !inputAge.current.value || !inputEmail.current.value ) {
+      alert ("Por favor, preencha todos os campos")
+
+      return
+    }
+
    await api.post('/usuarios',{
 
     name: inputName.current.value,
@@ -55,9 +61,9 @@ const inputEmail =  useRef()
 
       <form>
         <h1>Cadastro de Estudantes</h1>
-        <input placeholder='Informe um Nome' name='Nome' type='text' ref={inputName}/>
-        <input placeholder='Informe uma idade' name='Idade' type='number' ref={inputAge} />
-        <input placeholder='Informe um e-mail' name='E-mail' type='email' ref={inputEmail} />
+        <input placeholder='Informe um Nome' name='Nome' type='text' ref={inputName} required/>
+        <input placeholder='Informe uma idade' name='Idade' type='number' ref={inputAge} required />
+        <input placeholder='Informe um e-mail' name='E-mail' type='email' ref={inputEmail} required />
         <button type='buttton' onClick={createUsers}>Cadastrar Estudantes</button>
       </form>
 
