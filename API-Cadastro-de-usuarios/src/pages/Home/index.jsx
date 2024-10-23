@@ -9,7 +9,11 @@ function Home() {
   let users = []
 
  async function getUsers(){
-  users = await api.get('/usuarios')
+  const usersFromApi = await api.get('/usuarios')
+
+  users = usersFromApi.data
+  
+  console.log(users)
   }
 
   useEffect(() => {
