@@ -1,12 +1,20 @@
-import {} from 'react'
+import { } from 'react'
 
 
-function Tela ()
-
-return(
-
-)
+function Tela() {
 
 
+    return (
+
+        <div className='container'>
+
+            <form>
+
+            </form>
+
+        </div>
+    )
+
+}
 
 export default Tela 
